@@ -35,7 +35,7 @@ goto output_folder_q)
 
 :folder_sel
 echo. 
-SET /P folder="Specify folder name: "
+SET /P folder="Specify folder name (no quotes): "
 SET output_folder=exports\%folder%
 IF NOT EXIST "exports\%folder%" mkdir "exports\%folder%"
 
